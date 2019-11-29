@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Wesley</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/stylo.css">
+    <style>
+ 
+
+
+    
+    </style>
+</head>
+<body>
+  <nav class="menu-activea">
+    <h1 class="font-weight-bold">MENU</h1>
+    <ul>
+      <li class="nav-item">
+          <a class="nav-link" href="home.html">Curso</a>
+      </li>
+      <li class="nav-item">
+              <a class="nav-link" href="linguagemprog.html">Linguagem de Programação</a>
+      </li>
+      <li class="nav-item">
+              <a class="nav-link" href="usabilidade.html">Usabilidade</a>
+      </li>
+      
+      <li class="nav-item">
+          <a class="nav-link" href="frameworks.html">Frameworks</a>
+      </li>
+      
+    
+  </ul>
+</nav>
+<main>
+  <section><div class="container">
+    <div class="row">
+         <div class="col-12 divcentro ">
+           <H1 class="text-center bg-dark">O CURSO</H1>
+         </div>
+     <div class="col-6 divesquerda w-100 ">
+      <h3 class="bg-dark text-center">
+          Análise e Desenvolvimento de Sistemas
+      </h3>  
+      <p1>
+          O que o aluno estuda?<br>
+          A matemática, em especial raciocínio lógico e cálculo, é necessária para que o aluno aprenda a otimizar computadores e a desenvolver softwares. O aluno recebe noções sobre Bancos de Dados, sistemas baseados em web (como serviços bancários pela internet) e programação distribuída, que conecta computadores em rede para que funcionem como se fossem um só computador.<br>
+          
+          Administração, contabilidade, economia, estatística e inglês também fazem parte do currículo. Além disso, habilidades para leitura e interpretação de textos são fundamentais para o aprendizado durante o curso. Hoje, o mercado não aceita mais profissionais que se isolam na frente do computador. As empresas exigem pessoas versáteis, dinâmicas, que saibam trabalhar em equipe e possam ter contato com o usuário final do sistema.<br>
+          
+          O que o profissional faz
+          Cria, projeta, desenvolve e configura programas, softwares e sistemas para inúmeras empresas. Faz auditoria de sistemas para avaliar possíveis erros e falhas. Além disso, o tecnólogo em Análise e Desenvolvimento de Sistemas está apto a prestar consultoria e desenvolver pesquisas.<br>
+          
+          Onde trabalhar
+          Como a informática está presente em praticamente todos os setores da sociedade, o tecnólogo em Análise e Desenvolvimento de Sistemas pode atuar em empresas públicas ou privadas, instituições financeiras, consultorias, terceiro setor, empresas especializadas em Tecnologia da Informação (TI), indústrias etc.
+        </p1>
+  
+       </div>
+       
+       <div class="col-6 divdireita w-100">
+          <h3 class="bg-dark text-center">
+            O Projeto
+          </h3>
+         <p1> 
+           Este projeto consiste em aplicarmos os conceitos que aprendemos nas aulas sobre bootstrap, dentro de uma página com tópicos relacionados a máteria do Prof. Wesley.
+           <br>
+           Espero que fique de agrado.
+           
+       
+         </p1>
+   
+        </div>       
+
+
+   </div>
+   </div>
+   
+    
+  
+</section>
+  </main>
+
+<script>
+    (function() {
+
+  var nav = $('nav'),
+    menu = $('nav h1'),
+    main = $('main'),
+  	open = false,
+  	hover = false;
+
+  menu.on('click', function() {
+		open = !open ? true : false;
+    nav.toggleClass('menu-active');
+    main.toggleClass('menu-active');
+    nav.removeClass('menu-hover');
+    main.removeClass('menu-hover');
+    console.log(open);
+  });
+  menu.hover( 
+    function() {
+      if (!open) {
+      	nav.addClass('menu-hover');
+      	main.addClass('menu-hover');
+      }
+    }, function() {
+      nav.removeClass('menu-hover');
+      main.removeClass('menu-hover');
+    }
+  );
+
+})();
+    
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
